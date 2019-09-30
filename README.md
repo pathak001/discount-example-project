@@ -16,7 +16,7 @@ BODY :
 	},
 	"itemDetails" : [
 		{
-			"itemType" : "GROCERY",
+			"itemType" : "GROCERY", 
 			"amount" : 150
 		},
 		{
@@ -29,3 +29,8 @@ BODY :
 		}
 	]
 }
+=================================================================================================
+"itemType" : "GROCERY" // Here itemType can GROCERY , OTHER
+"customerType" : "CUSTOMER" // Here customerType can be EMPLOYEE, AFFILIATE, CUSTOMER
+
+=================================================================================================
