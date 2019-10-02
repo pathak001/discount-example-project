@@ -43,8 +43,7 @@ public class DiscountExampleService {
 		}
 		
 		int extraDiscount = totalAmount >= 100 ? (totalAmount/100)*5 : 0;
-		int payableAmount = totalAmount - (percentDiscount + extraDiscount);
-		return payableAmount;
+		return (totalAmount - (percentDiscount + extraDiscount));
 	}
 
 }
