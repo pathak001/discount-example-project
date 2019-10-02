@@ -34,3 +34,17 @@ BODY :
 "customerType" : "CUSTOMER" // Here customerType can be EMPLOYEE, AFFILIATE, CUSTOMER
 
 =================================================================================================
+
+To generate SonarQube report please follow these steps -
+
+1) Use version sonarqube-6.4 because latest version do support Java 11 
+then you might have to change in wrapper configuration.
+2) Start the sonarqube server by C:\sonarqube-6.4\bin\windows-x86-64\StartSonar.bat
+3) Use this command to build the project :
+    mvn clean install 
+    mvn sonar:sonar
+
+then you will get sonarqube report under :
+	http://localhost:9000/dashboard?id=com.example%3Adiscount-example-project
+	
+=================================================================================================
